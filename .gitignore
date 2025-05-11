@@ -1,0 +1,31 @@
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env
+.env.local
+.env.staging
+.env.development
+.env.production
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+coverage
+
+pnpm-lock.yaml
+
+# Sentry Config File
+.env.sentry-build-plugin
