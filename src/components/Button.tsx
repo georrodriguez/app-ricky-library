@@ -1,14 +1,15 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 interface ButtonProps {
   label: string;
   onClick: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => (
-  <button onClick={onClick} className="text-white bg-blue-500 hover:bg-blue-700 px-4 py-2 rounded">
+const PrimaryButton: React.FC<ButtonProps> = ({ label, onClick }) => (
+  <Button onClick={onClick} variant="primary">
     {label}
-  </button>
+  </Button>
 );
 
-export default Button;
+export default PrimaryButton;
